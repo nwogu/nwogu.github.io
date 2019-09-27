@@ -96,7 +96,7 @@
       $("#success").hide();
       $('#submitButton').click( function(e) {
         e.preventDefault();
-          $.post( 'http://whorder.herokuapp.com/api/sendmail', $('#myForm').serialize(), function(data) {
+          $.post( 'https://whorder.herokuapp.com/api/sendmail', $('#myForm').serialize(), function(data) {
               $('#success').show();
             },
             'json' // I expect a JSON response
